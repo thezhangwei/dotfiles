@@ -96,4 +96,11 @@ if !exists(":DiffOrig")
 endif
   
 " colorscheme
-colors slate
+color slate
+" line number
+set number
+" turn off toolbar for macvim
+set guioptions-=T
+" tabs and spaces
+set ts=4 sts=4 sw=4 noexpandtab
+
