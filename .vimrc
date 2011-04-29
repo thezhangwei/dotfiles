@@ -95,4 +95,5 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
   
-  colors slate
+" colorscheme
+colors slate
