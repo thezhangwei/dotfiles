@@ -67,7 +67,7 @@ if has("autocmd")
   au!
 
   " For all text files set 'textwidth' to 78 characters.
-  autocmd FileType text setlocal textwidth=78
+  autocmd FileType text setlocal textwidth=80
 
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
@@ -94,13 +94,26 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
 		  \ | wincmd p | diffthis
 endif
-  
+
+" my stuff start from here !
 " colorscheme
-color slate
+color desert 
 " line number
 set number
 " turn off toolbar for macvim
 set guioptions-=T
 " tabs and spaces
 set ts=4 sts=4 sw=4 noexpandtab
+" status bar
+set laststatus=2
+" show current cmd in the lower right corner
+set showcmd
+" show current mode
+set showmode
+" set command line two lines height
+set ch=2
+" text wrappping
+set wrap
+" set spell check
+set spell spelllang=en_us
 
