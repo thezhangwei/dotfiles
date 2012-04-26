@@ -1,0 +1,13 @@
+Host xen
+
+HostName xen.ics.uci.edu
+User zwei
+ServerAliveInterval 30
+ServerAliveCountMax 120
+
+Host zwp1
+
+HostName vp121185.reshsg.uci.edu
+User zwei
+ServerAliveInterval 30
+ServerAliveCountMax 120

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<plist version="1.0">
+<dict>
+	<key>BasebandSerialNumber</key>
+	<data>CAEOFxAYWDRhSKOM</data>
+	<key>HardwarePlatform</key>
+	<string>s5l8930x</string>
+	<key>PasswordProtected</key>
+	<false />
+	<key>Uses24HourClock</key>
+	<false />
+	<key>BasebandBootloaderVersion</key>
+	<string>ICE_2_8</string>
+	<key>BluetoothAddress</key>
+	<string>40:a6:d9:0a:be:bc</string>
+	<key>BasebandChipId</key>
+	<integer>80</integer>
+	<key>TimeZone</key>
+	<string>America/Los_Angeles</string>
+	<key>HardwareModel</key>
+	<string>N90AP</string>
+	<key>DeviceName</key>
+	<string>ZW-IP</string>
+	<key>SoftwareBundleVersion</key>
+	<string></string>
+	<key>PartitionType</key>
+	<string>GUID_partition_scheme</string>
+	<key>MLBSerialNumber</key>
+	<string>J50453PNEDPMD</string>
+	<key>InternationalMobileEquipmentIdentity</key>
+	<string>012545002152221</string>
+	<key>iTunesHasConnected</key>
+	<true />
+	<key>WiFiAddress</key>
+	<string>40:a6:d9:0a:be:bd</string>
+	<key>BasebandVersion</key>
+	<string>02.10.04</string>
+	<key>CPUArchitecture</key>
+	<string>armv7</string>
+	<key>ProductVersion</key>
+	<string>4.3.3</string>
+	<key>InternationalMobileSubscriberIdentity</key>
+	<string>310410358682250</string>
+	<key>IntegratedCircuitCardIdentity</key>
+	<string>89014104243586822500</string>
+	<key>ActivationStateAcknowledged</key>
+	<true />
+	<key>SIMStatus</key>
+	<string>kCTSIMSupportSIMStatusReady</string>
+	<key>PhoneNumber</key>
+	<string>+1 (949) 378-0390</string>
+	<key>RegionInfo</key>
+	<string>LL/A</string>
+	<key>ProximitySensorCalibration</key>
+	<data>
+		UFgDBzgmpAKNwzIAzgEaQSwAMwNfyzcALgKiAisA////////////////UhwG
+		AAAADgAAABkAAAAmAAAAIAAAAEAA///////M
+	</data>
+	<key>HostAttached</key>
+	<true />
+	<key>SIMGID1</key>
+	<data>//8=</data>
+	<key>SIMGID2</key>
+	<data>//8=</data>
+	<key>ProductionSOC</key>
+	<true />
+	<key>TrustedHostAttached</key>
+	<true />
+	<key>IMLockdownEverRegisteredKey</key>
+	<false />
+	<key>DeviceClass</key>
+	<string>iPhone</string>
+	<key>BasebandGoldCertId</key>
+	<integer>257</integer>
+	<key>DevicePublicKey</key>
+	<data>
+		LS0tLS1CRUdJTiBSU0EgUFVCTElDIEtFWS0tLS0tCk1JR0lBb0dBWXQ1NEFG
+		MTFVOTdTNjFtVjBPNlFyZU5KWjR6emFHR1Voand4SitxcStwS1FvTXFoM1R6
+		WS81QlMKbWxtc1J0aVFrZ1NGelpna0t1cnE0VDRiT29NQy9od1JpM1lxK2dD
+		cFJYSzN5YVZaWjVMMzhsdDF6dWNJV0FYLwpJd2FLOXNaQXhoRGlFeEFvNS94
+		S0dPVDhLTVJuMzNXQUlkL2dNaVpxeUJvWERSU1c2QU1DQXdFQUFRPT0KLS0t
+		LS1FTkQgUlNBIFBVQkxJQyBLRVktLS0tLQo=
+	</data>
+	<key>DeviceCertificate</key>
+	<data>
+		LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM4akNDQWx1Z0F3SUJB
+		Z0lLQW1nbUdRNzJvOVNJWmpBTkJna3Foa2lHOXcwQkFRVUZBREJhTVFzd0NR
+		WUQKVlFRR0V3SlZVekVUTUJFR0ExVUVDaE1LUVhCd2JHVWdTVzVqTGpFVk1C
+		TUdBMVVFQ3hNTVFYQndiR1VnYVZCbwpiMjVsTVI4d0hRWURWUVFERXhaQmNI
+		QnNaU0JwVUdodmJtVWdSR1YyYVdObElFTkJNQjRYRFRFeE1EVXhOREl6Ck16
+		WXlNVm9YRFRFME1EVXhOREl6TXpZeU1Wb3dnWU14TFRBckJnTlZCQU1USkRa
+		Qk1UQTBRMEU0TFRJeFFUY3QKTkVNNU15MUNSREl3TFVVME9EVkZRMEV4UWta
+		Rk1URUxNQWtHQTFVRUJoTUNWVk14Q3pBSkJnTlZCQWdUQWtOQgpNUkl3RUFZ
+		RFZRUUhFd2xEZFhCbGNuUnBibTh4RXpBUkJnTlZCQW9UQ2tGd2NHeGxJRWx1
+		WXk0eER6QU5CZ05WCkJBc1RCbWxRYUc5dVpUQ0JuakFOQmdrcWhraUc5dzBC
+		QVFFRkFBT0JqQUF3Z1lnQ2dZQnN6dEk5dmZjRUk1NUUKcWxORTN4MHJRQ3JC
+		cnJDMnIyZ1NTOGR0NXQ4L3lUM3pOZDlianZ2VzFHWC93dU9Tak1rNHNjTi9m
+		RzQ1NXMzMQpSL2tiUklpL3JKeGxmMFFwZXZwcmcvaVVWNkxhNFZ0bXFteG02
+		UWprdUFRTTY0REJ5SHYxUmtOeVREeDJBNWdGCjdxZFRiYU4wb2c2enh3SVZm
+		djB6aCtMQm03UGdJd0lEQVFBQm80R1ZNSUdTTUI4R0ExVWRJd1FZTUJhQUZM
+		TCsKSVNORWhwVnFlZFdCSm81ekVOaW5USTUwTUIwR0ExVWREZ1FXQkJRM0Vs
+		aWQvOUR6VGlFbVltSHFNVVpBUVFNTQp5VEFNQmdOVkhSTUJBZjhFQWpBQU1B
+		NEdBMVVkRHdFQi93UUVBd0lGb0RBZ0JnTlZIU1VCQWY4RUZqQVVCZ2dyCkJn
+		RUZCUWNEQVFZSUt3WUJCUVVIQXdJd0VBWUtLb1pJaHZkalpBWUtBZ1FDQlFB
+		d0RRWUpLb1pJaHZjTkFRRUYKQlFBRGdZRUFhcjQ4SlBZOThrRHREaXpjL2g0
+		M1EwZ3pkbzdQVG56Si9SREl2cGsrWHdJS1pWSXBHVlRYbVhiUQpxQjhoS0lH
+		bHJScm9tZjMvdHR1Vlo2UGJIZHYrYyt4T0RmenVJUmRZblFvQlZjVVQ2a2xo
+		UEtjclNPVlJyaGVVCjZScFNkZXZzWGdFRVNDdEJSekFLbHZxQUZyY1V6OGo0
+		NUpoY21tcnptaC9RR003eThicz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0t
+		LQo=
+	</data>
+	<key>UniqueDeviceID</key>
+	<string>4ccd1ab94f87b66570db8ff8e43bdcad399c054b</string>
+	<key>ActivationPublicKey</key>
+	<data>
+		LS0tLS1CRUdJTiBSU0EgUFVCTElDIEtFWS0tLS0tCk1JR0lBb0dBYk03U1Bi
+		MzNCQ09lUktwVFJOOGRLMEFxd2E2d3RxOW9Fa3ZIYmViZlA4azk4elhmVzQ3
+		NzF0UmwKLzhMamtvekpPTEhEZjN4dU9lYk45VWY1RzBTSXY2eWNaWDlFS1hy
+		NmE0UDRsRmVpMnVGYlpxcHNadWtJNUxnRQpET3VBd2NoNzlVWkRja3c4ZGdP
+		WUJlNm5VMjJqZEtJT3M4Y0NGWDc5TTRmaXdadXo0Q01DQXdFQUFRPT0KLS0t
+		LS1FTkQgUlNBIFBVQkxJQyBLRVktLS0tLQo=
+	</data>
+	<key>FirmwareVersion</key>
+	<string>iBoot-1072.61</string>
+	<key>TimeZoneOffsetFromUTC</key>
+	<integer>-25200</integer>
+	<key>ModelNumber</key>
+	<string>MC608</string>
+	<key>CallsInProgress</key>
+	<false />
+	<key>MobileSubscriberNetworkCode</key>
+	<string>410</string>
+	<key>SDIOProductInfo</key>
+	<string>P=N90 m=3.1 V=u</string>
+	<key>MobileSubscriberCountryCode</key>
+	<string>310</string>
+	<key>SoftwareBehavior</key>
+	<data>EQAAAAAAAAAAAAAAAAAAAA==</data>
+	<key>SBLockdownEverRegisteredKey</key>
+	<true />
+	<key>ProductType</key>
+	<string>iPhone3,1</string>
+	<key>SDIOManufacturerTuple</key>
+	<dict>
+		<key>IOSDIOProductID</key>
+		<integer>17193</integer>
+		<key>IOSDIOManufacturerID</key>
+		<integer>720</integer>
+	</dict>
+	<key>ActivationState</key>
+	<string>WildcardActivated</string>
+	<key>DeviceColor</key>
+	<string>black</string>
+	<key>ProtocolVersion</key>
+	<string>2</string>
+	<key>SerialNumber</key>
+	<string>7V0458RJA4S</string>
+	<key>SupportedDeviceFamilies</key>
+	<array>
+		<integer>1</integer>
+	</array>
+	<key>UniqueChipID</key>
+	<integer>3627654714741</integer>
+	<key>TimeIntervalSince1970</key>
+	<integer>1318489570</integer>
+	<key>DieID</key>
+	<integer>3747065625774286088</integer>
+	<key>BuildVersion</key>
+	<string>8J2</string>
+</dict>
+</plist>

@@ -1,0 +1,14 @@
+[ui]
+editor = vim 
+username = Wei Zhang <ndrzmansn@gmail.com>
+ignore = ~/dotfiles/hgignore_global
+
+[merge-tools]
+p4.priority = 100
+p4.premerge = True
+p4.executable = /Applications/p4merge.app/Contents/MacOS/p4merge
+p4.gui = True
+p4.args = $base $local $other $output
+
+[extensions]
+hgext.graphlog =
