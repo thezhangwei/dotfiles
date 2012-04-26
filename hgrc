@@ -11,4 +11,30 @@ p4.gui = True
 p4.args = $base $local $other $output
 
 [extensions]
+#enable hg glog command
 hgext.graphlog =
+
+# enable color diff, need mercurial >=1.1
+color=
+
+
+[color]
+# vim colors (bg=dark theme)
+diff.diffline = green bold
+diff.file_a = green bold
+diff.file_b = green bold
+diff.hunk = yellow bold
+diff.deleted = red bold
+diff.inserted = cyan bold
+# for status
+status.modified = magenta bold
+status.added = green bold
+status.removed = red bold
+status.deleted = cyan bold
+status.unknown = blue bold
+status.ignored = black bold
+
+[alias]
+show = log --color=always -pr
+slog = log --template '\033[0;33m{rev} \033[0;31m{branches} \033[0;39m{desc|firstline|strip} \033[0;34m({date|age} by {author|person}) \033[1;39m{tags}\033[0m\n\n'
+sglog = glog --template '\t\033[0;33m{rev} \033[0;31m{branches}  \033[0m{desc|firstline|strip} \033[0;34m({date|age} by {author|person}) \033[1;39m{tags}\033[0m\n\n'

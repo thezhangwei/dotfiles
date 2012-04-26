@@ -1,0 +1,5 @@
+"
+" vimrc before for customizing janus vim distribution
+"
+" remap the leader key
+let mapleader = ","
