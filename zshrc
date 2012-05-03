@@ -45,6 +45,8 @@ source $ZSH/oh-my-zsh.sh
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
 export TERM=xterm-color
+autoload -U colors
+colors
 
 # Java
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
@@ -72,7 +74,7 @@ export PATH=~/Documents/program/free_apps/c1visualizer/bin:$PATH
 alias ..='cd ..'
 
 # ls
-alias ls="ls -lAh"
+alias ls="ls -lAhG"
 
 # rm
 alias rm='rm -i'

@@ -38,3 +38,4 @@ status.ignored = black bold
 show = log --color=always -pr
 slog = log --template '\033[0;33m{rev} \033[0;31m{branches} \033[0;39m{desc|firstline|strip} \033[0;34m({date|age} by {author|person}) \033[1;39m{tags}\033[0m\n\n'
 sglog = glog --template '\t\033[0;33m{rev} \033[0;31m{branches}  \033[0m{desc|firstline|strip} \033[0;34m({date|age} by {author|person}) \033[1;39m{tags}\033[0m\n\n'
+st = status

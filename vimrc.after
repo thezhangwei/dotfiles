@@ -144,6 +144,19 @@ set guioptions-=T
 "" OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
 "" 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
 "" The following changes the default filetype back to 'tex':
-"let g:tex_flavor='latex'
 
-
+" latex
+let g:tex_flavor='latex'
+let g:Tex_MultipleCompileFormats='pdf'
+let g:Tex_DefaultTargetFormat='pdf'
+let g:Tex_IgnoredWarnings =
+\'Underfull'."\n".
+\'Overfull'."\n".
+\'specifier changed to'."\n".
+\'You have requested'."\n".
+\'Missing number, treated as zero.'."\n".
+\'There were undefined references'."\n".
+\'Latex Warning:'."\n".
+\'Citation %.%# undefined'
+let g:Tex_IgnoreLevel = 8
+let Tex_ViewRule_pdf = 'open $*.pdf &'
