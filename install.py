@@ -1,24 +1,33 @@
 import os
+import errno
+
 current_dir = os.getcwd()
-#os.symlink(hgrc, './test/link')
 
 dotfiles = ['bash_profile',
             'bashrc',
-				    'gitconfig',
-				    'hgrc',
-				    'shsh',
-				    'ssh',
-				    'vim',
-            'vimrc'
-			      ]
+            'zshrc',
+	    'gitconfig',
+	    'hgrc',
+	    'shsh',
+	    'ssh',
+	    'vim',
+            'vimrc']
+
+def create_symlink(target, link):
+	try:
+		os.symlink(target, link)
+	except OSError, e:
+		if e.errno == errno.EEXIST:
+			print("removing " + link)
+			os.remove(link) 
+			print("symlinking " + link + " to " + target)
+			os.symlink(target, link)
 
 dotfile_pathes = []
 for dotfile in dotfiles:
 	dotfile_pathes.append("%s/%s" % (current_dir, dotfile))
 
 symlinks = []
-for dotfile in dotfiles:
-	symlinks.append("./test/%s" % dotfile)
 
 for path in dotfile_pathes:
 	print path
@@ -29,9 +38,11 @@ for dotfile in dotfiles:
 home_dir = os.path.expanduser('~')
 os.chdir(home_dir)
 print os.getcwd()
-for (path, symlink) in zip(dotfile_pathes, dotfiles):
-	print("create symlink src " + path + ' dst ' + os.getcwd() + '/.' +symlink)
-	os.symlink(path, './.' + symlink)
-  
+
+for (source, symlink) in zip(dotfile_pathes, dotfiles):
+	dotfile = '.' + symlink
+	print("create symlink " + dotfile + ' targeting ' + source)
+	create_symlink(source, dotfile)
+
 
 
