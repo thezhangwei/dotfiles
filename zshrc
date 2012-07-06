@@ -49,8 +49,9 @@ autoload -U colors
 colors
 
 # Java
-export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
+#export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
 #export JAVA_HOME=/Library/Java/JavaVirtualMachines/1.6.0_22-b04-307.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/1.7.0u-dev.jdk/Contents/Home
 
 # Maxine
 export MAXINE_HOME=~/maxine
@@ -67,6 +68,8 @@ export ECLIPSE_HOME=/Applications/eclipse
 # c1xvisualizer
 export PATH=~/Documents/program/free_apps/c1visualizer/bin:$PATH
 
+# maxine
+export PATH=~/Workspace/Maxine/mxtool:$PATH
 ##########################################################
 # Alias
 ##########################################################
@@ -78,3 +81,6 @@ alias ls="ls -lAhG"
 
 # rm
 alias rm='rm -i'
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm

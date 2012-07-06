@@ -37,3 +37,5 @@ alias ls="ls -lAh"
 
 # rm
 alias rm='rm -i'
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
