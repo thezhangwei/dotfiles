@@ -11,7 +11,7 @@ dotfiles = ['bash_profile',
 	    'shsh',
 	    'ssh',
 	    'vim',
-            'vimrc']
+            ]
 
 def create_symlink(target, link):
 	try:
@@ -44,5 +44,5 @@ for (source, symlink) in zip(dotfile_pathes, dotfiles):
 	print("create symlink " + dotfile + ' targeting ' + source)
 	create_symlink(source, dotfile)
 
-
+print(" please manually create a symlink from ~/.vim/janus.vim/vimrc to ~/.vimrc
 
