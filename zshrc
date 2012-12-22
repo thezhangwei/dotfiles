@@ -62,6 +62,9 @@ export JUNIT4_CP=/usr/share/java/junit-4.8.1.jar
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
+# Homebrew
+export PATH=/usr/local/bin:$PATH
+
 # eclipse
 export ECLIPSE_HOME=/Applications/eclipse
 
