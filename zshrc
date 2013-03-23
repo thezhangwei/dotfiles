@@ -49,9 +49,9 @@ autoload -U colors
 colors
 
 # Java
-#export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
+#export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/Current/Home
 #export JAVA_HOME=/Library/Java/JavaVirtualMachines/1.6.0_22-b04-307.jdk/Contents/Home
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/1.7.0u4.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_15.jdk/Contents/Home
 
 # Maxine
 export MAXINE_HOME=~/maxine

@@ -161,3 +161,6 @@ let g:Tex_IgnoredWarnings =
 \'Citation %.%# undefined'
 let g:Tex_IgnoreLevel = 8
 let Tex_ViewRule_pdf = 'open $*.pdf &'
+
+" spell check
+setlocal spell spelllang=en_us
