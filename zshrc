@@ -51,7 +51,9 @@ colors
 # Java
 #export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
 #export JAVA_HOME=/Library/Java/JavaVirtualMachines/1.6.0_22-b04-307.jdk/Contents/Home
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/1.7.0u4.jdk/Contents/Home
+#export JAVA_HOME=/Library/Java/JavaVirtualMachines/1.7.0u4.jdk/Contents/Home
+#export JAVA_HOME=/Library/Java/JavaVirtualMachines/1.7.0u-dev.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_10.jdk/Contents/Home
 
 # Maxine
 export MAXINE_HOME=~/maxine
@@ -73,6 +75,12 @@ export PATH=~/Documents/program/free_apps/c1visualizer/bin:$PATH
 
 # maxine
 export PATH=~/Workspace/Maxine/mxtool:$PATH
+
+# RVM
+if [[ -s $HOME/.rvm/scripts/rvm ]]; then
+  source $HOME/.rvm/scripts/rvm;
+fi
+
 ##########################################################
 # Alias
 ##########################################################
