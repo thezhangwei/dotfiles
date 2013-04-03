@@ -8,6 +8,9 @@
 [core]
 	editor = vim
 	excludesfile = ~/dotfiles/gitignore_global
+	pager = cat
+[push]
+	default = simple
 [merge]
 	tool = vimdiff
 [difftool "sourcetree"]
