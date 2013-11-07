@@ -39,7 +39,7 @@ source $ZSH/oh-my-zsh.sh
 # zwei's stuff
 ##########################################################
 # Environemnt
-###########################################################
+##########################################################
 # prompt
 #export PS1="[\[\e[32m\]\u@\H \[\e[36m\]\w\[\e[0m\]] $ "
 export CLICOLOR=1
@@ -50,23 +50,7 @@ colors
 
 # Java
 #export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/Current/Home
-#export JAVA_HOME=/Library/Java/JavaVirtualMachines/1.6.0_22-b04-307.jdk/Contents/Home
-<<<<<<< HEAD
-#export JAVA_HOME=/Library/Java/JavaVirtualMachines/1.7.0u4.jdk/Contents/Home
-#export JAVA_HOME=/Library/Java/JavaVirtualMachines/1.7.0u-dev.jdk/Contents/Home
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_10.jdk/Contents/Home
-=======
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_15.jdk/Contents/Home
->>>>>>> 7098e8832a6c9ad72a1cc66a726fc7e63fe68c87
-
-# Maxine
-export MAXINE_HOME=~/maxine
-export MAXINE_VM_HOME=${MAXINE_HOME}/Native/generated/darwin
-export JUNIT4_CP=/usr/share/java/junit-4.8.1.jar
-
-# macport
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Home
 
 # Homebrew
 export PATH=/usr/local/bin:$PATH
@@ -76,14 +60,6 @@ export ECLIPSE_HOME=/Applications/eclipse
 
 # c1xvisualizer
 export PATH=~/Documents/program/free_apps/c1visualizer/bin:$PATH
-
-# maxine
-export PATH=~/Workspace/Maxine/mxtool:$PATH
-
-# RVM
-if [[ -s $HOME/.rvm/scripts/rvm ]]; then
-  source $HOME/.rvm/scripts/rvm;
-fi
 
 ##########################################################
 # Alias
@@ -97,5 +73,3 @@ alias ls="ls -lAhG"
 # rm
 alias rm='rm -i'
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
