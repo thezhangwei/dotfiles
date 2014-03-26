@@ -17,6 +17,7 @@ hgext.graphlog =
 # enable color diff, need mercurial >=1.1
 color=
 
+purge=
 
 [color]
 # vim colors (bg=dark theme)
