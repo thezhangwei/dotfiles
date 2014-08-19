@@ -1,0 +1,5 @@
+[dotfiles]
+repository = ~/dotfiles
+ignore = ['README',
+          'install.py',
+          'oh-my-zsh' ]
