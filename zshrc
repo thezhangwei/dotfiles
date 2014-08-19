@@ -50,8 +50,11 @@ colors
 
 # Java
 #export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/Current/Home
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
-#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Home
+#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
+#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home
+#export EXTRA_JAVA_HOMES=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
+export EXTRA_JAVA_HOMES=/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home
 
 # Homebrew
 export PATH=/usr/local/bin:$PATH
@@ -60,7 +63,13 @@ export PATH=/usr/local/bin:$PATH
 export ECLIPSE_HOME=/Applications/eclipse
 
 # c1xvisualizer
-export PATH=~/Documents/program/free_apps/c1visualizer/bin:$PATH
+export PATH=~/Documents/program/c1visualizer/bin:$PATH
+
+# mxtool for fastr
+export PATH=/Users/zwei/Workspace/mxtool2:$PATH
+
+# Stefan's MLQ interpreter
+export PATH=/Users/zwei/Workspace/taco-python-ubx:$PATH
 
 ##########################################################
 # Alias
@@ -74,3 +83,30 @@ alias ls="ls -lAhG"
 # rm
 alias rm='rm -i'
 
+# proxy
+export http_proxy="www-proxy.us.oracle.com:80"
+export https_proxy="www-proxy.us.oracle.com:80"
+
+###########################
+# virtualenv
+###########################
+set where virutal environments will live
+export WORKON_HOME=$HOME/.virtualenvs
+
+# ensure all new environments are isolated from the site-packages directory
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
+
+# use the same directory for virtualenvs as virtualenvwrapper
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
+
+# makes pip detect an active virtualenv and install to it
+export PIP_RESPECT_VIRTUALENV=true
+if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
+    source /usr/local/bin/virtualenvwrapper.sh
+else
+    echo "WARNING: Can't find virtualenvwrapper.sh"
+fi
+
+# pypy jitview
+export PYTHONPATH="${PYTHONPATH}:/usr/local/lib/pypy/site-packages"
+export PYTHONPATH="${PYTHONPATH}:/Users/zwei/Workspace/pypy"
