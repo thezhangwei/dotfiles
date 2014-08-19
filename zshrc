@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
+ZSH_CUSTOM=$ZSH/custom
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -82,6 +83,9 @@ alias ls="ls -lAhG"
 
 # rm
 alias rm='rm -i'
+
+# apm
+alias apm='apm --color'
 
 # proxy
 export http_proxy="www-proxy.us.oracle.com:80"

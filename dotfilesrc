@@ -1,7 +1,8 @@
 [dotfiles]
 repository = ~/dotfiles
-ignore = ['README',
+ignore = ['README.md',
           '.git',
           '.gitignore',
           '.gitmodules',
-          'oh-my-zsh' ]
+          '_oh-my-zsh-custom'
+         ]
