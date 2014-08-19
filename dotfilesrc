@@ -1,5 +1,7 @@
 [dotfiles]
 repository = ~/dotfiles
 ignore = ['README',
-          'install.py',
+          '.git',
+          '.gitignore',
+          '.gitmodules',
           'oh-my-zsh' ]
