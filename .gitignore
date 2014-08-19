@@ -1,2 +1,9 @@
-hg-repo-backup
+# ssh
 ssh
+
+# atom
+atom/storage
+atom/.node-gyp
+atom/packages
+atom/compile-cache
+
