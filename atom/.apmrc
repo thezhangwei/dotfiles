@@ -1,2 +1,1 @@
 strict-ssl = false
-https-proxy = https://www-proxy.us.oracle.com:80

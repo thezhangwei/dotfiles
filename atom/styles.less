@@ -13,7 +13,12 @@
 }
 
 .editor {
-
+  @media (-webkit-max-device-pixel-ratio: 1) {
+    -webkit-font-smoothing: auto;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-stroke: 0.6px;
+  }
 }
 
 .editor .cursor {

@@ -1,6 +1,7 @@
 'editor':
-  'fontSize': 11
+  'fontSize': 13
   'preferredLineLength': 160
+  'fontFamily': 'Source Code Pro'
 'core':
   'themes': [
     'atom-light-ui'
@@ -33,3 +34,12 @@
 'tree-view':
   'hideIgnoredNames': true
   'hideVcsIgnoredFiles': true
+'remember-session':
+  'path': ''
+  'x': 0
+  'y': 0
+  'tabs': ''
+  'selectedTab': ''
+  'width': 1920
+  'height': 1200
+  'treeWidth': 279
