@@ -24,7 +24,8 @@ set showmode
 set ch=2
 
 " text wrappping
-"set wrap linebreak textwidth=0
+set wrap linebreak textwidth=0
+set wrapmargin=0
 "
 " set spell check
 set spell spelllang=en_us
