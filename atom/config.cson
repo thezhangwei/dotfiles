@@ -2,6 +2,7 @@
   'fontSize': 13
   'preferredLineLength': 160
   'fontFamily': 'Source Code Pro'
+  'normalizeIndentOnPaste': false
 'core':
   'themes': [
     'atom-light-ui'
@@ -42,4 +43,4 @@
   'selectedTab': ''
   'width': 1920
   'height': 1200
-  'treeWidth': 279
+  'treeWidth': 427
