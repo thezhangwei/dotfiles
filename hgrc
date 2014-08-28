@@ -1,5 +1,5 @@
 [ui]
-editor = vim -c ":set textwidth=80"
+editor = vim -c ":set textwidth=0"
 username = Wei Zhang <ndrzmansn@gmail.com>
 ignore = ~/dotfiles/hgignore_global
 
