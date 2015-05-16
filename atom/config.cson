@@ -40,10 +40,6 @@
       "language-less"
       "language-mustache"
     ]
-    themes: [
-      "atom-light-ui"
-      "solarized-light-syntax"
-    ]
   "exception-reporting":
     userId: "1837a652-0271-2ad0-c5ce-3d4fa8a6bdb4"
   "release-notes":
@@ -77,9 +73,9 @@
     ]
   latex:
     {}
-".python.source":
-  editor:
-    tabLength: 2
 ".sass.source":
   editor:
     autoIndentOnPaste: false
+".python.source":
+  editor:
+    tabLength: 2
