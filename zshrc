@@ -53,7 +53,8 @@ colors
 #export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/Current/Home
 #export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
 #export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home
+#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home
 #export EXTRA_JAVA_HOMES=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
 export EXTRA_JAVA_HOMES=/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home
 
@@ -68,6 +69,7 @@ export PATH=~/Documents/program/c1visualizer/bin:$PATH
 
 # mxtool for fastr
 export PATH=/Users/zwei/Workspace/mxtool2:$PATH
+export MXTOOL_HOME=/Users/zwei/Workspace/mxtool2
 
 # Stefan's MLQ interpreter
 export PATH=/Users/zwei/Workspace/taco-python-ubx:$PATH
@@ -87,9 +89,8 @@ alias rm='rm -i'
 # apm
 alias apm='apm --color'
 
-# proxy
-export http_proxy="www-proxy.us.oracle.com:80"
-export https_proxy="www-proxy.us.oracle.com:80"
+# mx
+alias mx='mx --src-suitemodel nested'
 
 ###########################
 # virtualenv

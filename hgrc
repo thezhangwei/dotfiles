@@ -1,6 +1,6 @@
 [ui]
 editor = vim -c ":set textwidth=0"
-username = Wei Zhang <ndrzmansn@gmail.com>
+username = Wei Zhang <thezhangwei@gmail.com>
 ignore = ~/dotfiles/hgignore_global
 
 [merge-tools]

@@ -19,3 +19,11 @@
 
 '.editor:not(.mini)':
   'cmd-d': 'editor:delete-line'
+
+
+'.editor':
+  'alt-space': 'autocomplete:toggle'
+  'cmd-/': 'editor:toggle-line-comments'
+
+'atom-text-editor':
+  'cmd-b': 'latex:build'
