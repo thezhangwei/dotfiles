@@ -1,3 +1,6 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!! urxvt
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 URxvt*termName: screen-256color
 URxvt*geometry: 240x84
 URxvt*loginShell: true
@@ -12,7 +15,7 @@ URxvt*skipScroll: true
 URxvt*scrollBar: false
 URxvt*scrollBar_right: false
 URxvt*scrollBar_floating: false
-URxvt*fading: 30
+URxvt*fading: false
 URxvt*utmpInhibit: false
 URxvt*urgentOnBell: false
 URxvt*visualBell: true
@@ -22,14 +25,39 @@ URxvt*background: Black
 URxvt*foreground: White
 URxvt*colorUL: yellow
 URxvt*underlineColor: yellow
-URxvt*font: xft:monaco:pixelsize=12
-URxvt*boldFont: xft:monaco:bold:pixelsize=12
-URxvt*italicFont: xft:Bitstream Vera Sans Mono:italic:autohint=true:pixelsize=12
-URxvt*boldItalicFont: xft:Bitstream Vera Sans Mono:bold:italic:autohint=true:pixelsize=12
+URxvt*font: xft:Consolas:autohint=true:pixelsize=12:antialias=false
+URxvt*boldFont: xft:Consolas:autohint=true:pixelsize=12:antialias=false
+URxvt*italicFont: xft:Consolas:italic:autohint=true:pixelsize=12:antialias=true
+URxvt*boldItalicFont: xft:Consolas:italic:autohint=true:pixelsize=12:antialias=true
 URxvt*saveLines: 0
 URxvt*buffered: true
 URxvt*hold: false
 URxvt*internalBorder:
 URxvt*print-pipe: cat > $HOME/$(echo urxvt.dump.$(date +'%Y%M%d%H%m%S'))
-URxvt*perl-ext-common:
+URxvt*perl-ext-common: default,clipboard
 URxvt*perl-ext:
+URxvt*iso14755: False
+URxvt*keysym.Shift-Control-C: perl:clipboard:copy
+URxvt*keysym.Shift-Control-V: perl:clipboard:paste
+urxvt*transparent: true
+urxvt*shading: 15
+
+URxvt.cursorColor: #06989a
+URxvt.background: #000000
+URxvt.foreground: #cccccc
+URxvt.color0:  #000000
+URxvt.color8:  #555753
+URxvt.color1:  #cc0000
+URxvt.color9:  #EF2929
+URxvt.color2:  #4E9A06
+URxvt.color10: #8AE234
+URxvt.color3:  #C4A000
+URxvt.color11: #FCE94F
+URxvt.color4:  #3465A4
+URxvt.color12: #739FCF
+URxvt.color5:  #75507B
+URxvt.color13: #AD7FA8
+URxvt.color6:  #06989A
+URxvt.color14: #34E2E2
+URxvt.color7:  #D3D7CF
+URxvt.color15: #EEEEEC

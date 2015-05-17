@@ -7,4 +7,5 @@ atom/.node-gyp
 atom/packages
 atom/compile-cache
 atom/.apm
+atom/*.out
 
