@@ -17,7 +17,7 @@ URxvt*scrollTtyOutput: false
 URxvt*scrollWithBuffer: false
 URxvt*secondaryScreen: true
 URxvt*secondaryScroll: true
-URxvt*skipScroll: true
+URxvt*skipScroll: false
 URxvt*scrollBar: false
 URxvt*scrollBar_right: false
 URxvt*scrollBar_floating: false
@@ -27,8 +27,6 @@ URxvt*urgentOnBell: false
 URxvt*visualBell: true
 URxvt*mapAlert: true
 URxvt*mouseWheelScrollPage: false
-URxvt*background: Black
-URxvt*foreground: White
 URxvt*colorUL: yellow
 URxvt*underlineColor: yellow
 URxvt*font: xft:Menlo:pixelsize=12:antialias=true
@@ -45,25 +43,33 @@ URxvt*perl-ext:
 URxvt*iso14755: False
 URxvt*keysym.Shift-Control-C: perl:clipboard:copy
 URxvt*keysym.Shift-Control-V: perl:clipboard:paste
-urxvt*transparent: true
-urxvt*shading: 15
+URxvt*transparent: true
+!URxvt*shading: 15
 
-URxvt.cursorColor: #06989a
-URxvt.background: #000000
-URxvt.foreground: #cccccc
-URxvt.color0:  #000000
-URxvt.color8:  #555753
-URxvt.color1:  #cc0000
-URxvt.color9:  #EF2929
-URxvt.color2:  #4E9A06
-URxvt.color10: #8AE234
-URxvt.color3:  #C4A000
-URxvt.color11: #FCE94F
-URxvt.color4:  #3465A4
-URxvt.color12: #739FCF
-URxvt.color5:  #75507B
-URxvt.color13: #AD7FA8
-URxvt.color6:  #06989A
-URxvt.color14: #34E2E2
-URxvt.color7:  #D3D7CF
-URxvt.color15: #EEEEEC
+URxvt.foreground: #bbbbbb
+URxvt.background: #112233
+URxvt.cursorColor: #bb9900
+!black
+URxvt.color0:  #445566
+URxvt.color8:  #445566
+!red
+URxvt.color1:  #dd3366
+URxvt.color9:  #dd3366
+!green
+URxvt.color2:  #99aa00
+URxvt.color10: #99aa00
+!yellow
+URxvt.color3:  #bb9900
+URxvt.color11: #bb9900
+!blue
+URxvt.color4:  #3399dd
+URxvt.color12: #3399dd
+!magenta
+URxvt.color5:  #6666dd
+URxvt.color13: #6666dd
+!cyan
+URxvt.color6:  #339999
+URxvt.color14: #339999
+!white
+URxvt.color7:  #bbbbbb
+URxvt.color15: #bbbbbb
