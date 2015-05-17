@@ -180,9 +180,20 @@ client.background			#121212
 # finds out, if available)
 #######################################
 bar {
-    status_command i3status -c ~/.i3/status
-    # i3bar position
-    position top
+    colors {
+        #statusline #ADD8E6
+        background #222222
+        statusline #dddddd
+        separator  #666666
+        active_workspace   #333333 #333333 #888888
+        focused_workspace  #0088CC #0088CC #ffffff
+        inactive_workspace #333333 #333333 #888888
+        urgent_workspace   #2f343a #900000 #ffffff
+   }
+
+   status_command i3status -c ~/.i3/status
+   # i3bar position
+   position top
 }
 
 #######################################

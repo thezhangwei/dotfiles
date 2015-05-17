@@ -6,7 +6,7 @@
 # If the above line is not correctly displayed, fix your editor first!
 general {
   colors = true
-  #color_good = "#00FF00"
+  color_good = "#2277dd"
   interval = 2
 }
 
