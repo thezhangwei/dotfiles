@@ -49,6 +49,8 @@ export TERM=xterm-color
 autoload -U colors
 colors
 
+export EDITOR=vim
+
 # Java
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home
 #export EXTRA_JAVA_HOMES=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
