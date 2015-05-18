@@ -73,9 +73,9 @@
     ]
   latex:
     {}
-".sass.source":
-  editor:
-    autoIndentOnPaste: false
 ".python.source":
   editor:
     tabLength: 2
+".sass.source":
+  editor:
+    autoIndentOnPaste: false
