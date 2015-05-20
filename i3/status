@@ -16,7 +16,7 @@ order += "wireless wlp3s0"
 #order += "ethernet eth0"
 order += "load"
 order += "cpu_usage"
-order += "cpu_temperature 1"
+order += "cpu_temperature 2"
 order += "volume master"
 order += "tztime local"
 
@@ -56,7 +56,7 @@ cpu_usage {
   format= "CPU: %usage"
 }
 
-cpu_temperature 1 {
+cpu_temperature 2 {
 	format = " %degrees°"
 	max_threshold = 95
 }

@@ -52,9 +52,18 @@ colors
 export EDITOR=vim
 
 # Java
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home
-#export EXTRA_JAVA_HOMES=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
-export EXTRA_JAVA_HOMES=/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home
+
+
+case "$OSTYPE" in
+  darwin*)
+    export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home
+    #export EXTRA_JAVA_HOMES=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
+    export EXTRA_JAVA_HOMES=/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home
+    ;;
+  linux*)
+    
+    ;;
+esac
 
 # Homebrew
 export PATH=/usr/local/bin:$PATH
