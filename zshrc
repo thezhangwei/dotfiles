@@ -1,6 +1,6 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
-ZSH_CUSTOM=$ZSH/custom
+ZSH_CUSTOM=$HOME/dotfiles/_oh-my-zsh-custom
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -49,14 +49,21 @@ export TERM=xterm-color
 autoload -U colors
 colors
 
+export EDITOR=vim
+
 # Java
-#export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/Current/Home
-#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
-#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
-#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home
-#export EXTRA_JAVA_HOMES=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
-export EXTRA_JAVA_HOMES=/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home
+
+
+case "$OSTYPE" in
+  darwin*)
+    export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home
+    #export EXTRA_JAVA_HOMES=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
+    export EXTRA_JAVA_HOMES=/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home
+    ;;
+  linux*)
+    
+    ;;
+esac
 
 # Homebrew
 export PATH=/usr/local/bin:$PATH
@@ -71,9 +78,6 @@ export PATH=~/Documents/program/c1visualizer/bin:$PATH
 export PATH=/Users/zwei/Workspace/mxtool2:$PATH
 export MXTOOL_HOME=/Users/zwei/Workspace/mxtool2
 
-# Stefan's MLQ interpreter
-export PATH=/Users/zwei/Workspace/taco-python-ubx:$PATH
-
 ##########################################################
 # Alias
 ##########################################################
@@ -81,7 +85,7 @@ export PATH=/Users/zwei/Workspace/taco-python-ubx:$PATH
 alias ..='cd ..'
 
 # ls
-alias ls="ls -lAhG"
+alias ls="ls -lAhG --color"
 
 # rm
 alias rm='rm -i'
@@ -92,26 +96,14 @@ alias apm='apm --color'
 # mx
 alias mx='mx --src-suitemodel nested'
 
-###########################
-# virtualenv
-###########################
-set where virutal environments will live
-export WORKON_HOME=$HOME/.virtualenvs
+##########################################################
+# Arch linux
+##########################################################
+# ibus
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
+ibus-daemon -drx
 
-# ensure all new environments are isolated from the site-packages directory
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
-
-# use the same directory for virtualenvs as virtualenvwrapper
-export PIP_VIRTUALENV_BASE=$WORKON_HOME
-
-# makes pip detect an active virtualenv and install to it
-export PIP_RESPECT_VIRTUALENV=true
-if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
-    source /usr/local/bin/virtualenvwrapper.sh
-else
-    echo "WARNING: Can't find virtualenvwrapper.sh"
-fi
-
-# pypy jitview
-export PYTHONPATH="${PYTHONPATH}:/usr/local/lib/pypy/site-packages"
-export PYTHONPATH="${PYTHONPATH}:/Users/zwei/Workspace/pypy"
+# i3
+export TERMINAL=urxvt
