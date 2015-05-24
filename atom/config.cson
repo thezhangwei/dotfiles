@@ -40,6 +40,10 @@
       "language-less"
       "language-mustache"
     ]
+    themes: [
+      "atom-light-ui"
+      "solarized-light-syntax"
+    ]
   "exception-reporting":
     userId: "1837a652-0271-2ad0-c5ce-3d4fa8a6bdb4"
   "release-notes":
@@ -54,13 +58,13 @@
     hideVcsIgnoredFiles: true
     hideIgnoredNames: true
   "remember-session":
-    path: "/Users/zwei/Workspace/thesis"
+    path: ""
     x: 0
     y: 23
-    tabs: "/Users/zwei/Workspace/thesis/thesis.tex&&/Users/zwei/Workspace/thesis/ch7-evaluation.tex&&/Users/zwei/Workspace/thesis/ch6-object.tex&&/Users/zwei/Workspace/thesis/ch8-related.tex"
+    tabs: ""
     selectedTab: ""
     width: 1920
-    height: 1053
+    height: 1173
     treeWidth: 200
   "autocomplete-plus":
     enableAutoActivation: false
@@ -77,9 +81,9 @@
   "tool-bar":
     position: "Left"
     iconSize: "16px"
-".sass.source":
-  editor:
-    autoIndentOnPaste: false
 ".python.source":
   editor:
     tabLength: 2
+".sass.source":
+  editor:
+    autoIndentOnPaste: false
