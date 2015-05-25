@@ -103,7 +103,12 @@ alias mx='mx --src-suitemodel nested'
 export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
-ibus-daemon -drx
+
+case "$OSTYPE" in
+  linux*)
+    ibus-daemon -drx
+    ;;
+esac
 
 # i3
 export TERMINAL=urxvt
