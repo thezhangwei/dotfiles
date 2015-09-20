@@ -85,7 +85,7 @@ export MXTOOL_HOME=/Users/zwei/Workspace/mxtool2
 alias ..='cd ..'
 
 # ls
-alias ls="ls -lAhG --color"
+alias ls="ls -lAhG"
 
 # rm
 alias rm='rm -i'
