@@ -36,13 +36,16 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 #
-
 # zwei's stuff
+##########################################################
+# Twitter's stuff
+##########################################################
+source $HOME/.twitter.bash
+
 ##########################################################
 # Environemnt
 ##########################################################
 # prompt
-#export PS1="[\[\e[32m\]\u@\H \[\e[36m\]\w\[\e[0m\]] $ "
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
 export TERM=xterm-color
@@ -77,6 +80,9 @@ export PATH=~/Documents/program/c1visualizer/bin:$PATH
 # mxtool for fastr
 export PATH=/Users/zwei/Workspace/mxtool2:$PATH
 export MXTOOL_HOME=/Users/zwei/Workspace/mxtool2
+
+# rbenv
+eval "$(rbenv init -)"
 
 ##########################################################
 # Alias
