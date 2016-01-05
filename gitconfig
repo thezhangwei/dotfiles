@@ -1,6 +1,6 @@
 [user]
 	name = Wei Zhang
-	email = thezhangwei@gmail.com
+	email = weiz@twitter.com
 [color]
 	diff = auto
 	status = auto
@@ -12,19 +12,20 @@
 [push]
 	default = simple
 [merge]
-	tool = vimdiff
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+	tool = p4mergetool
+[mergetool "p4mergetool"]
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$REMOTE $PWD/$LOCAL $PWD/$MERGED
+	trustExitCode = false
+
 [alias]
   st = status
   ci = commit
   br = branch
   co = checkout
   df = diff
-  gl = log --graph --full-history --all --color --pretty=tformat:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s%x20%x1b[33m(%an)%x1b[0m" -n 20
+  gl = log master --graph --full-history --color --pretty=tformat:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s%x20%x1b[33m(%an)%x1b[0m" -n 20
 [credential]
 	helper = cache
+
+[mergetool]
+	keepBackup = false
