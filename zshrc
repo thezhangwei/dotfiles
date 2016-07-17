@@ -36,13 +36,16 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 #
-
 # zwei's stuff
+##########################################################
+# Twitter's stuff
+##########################################################
+source $HOME/.twitter.bash
+
 ##########################################################
 # Environemnt
 ##########################################################
 # prompt
-#export PS1="[\[\e[32m\]\u@\H \[\e[36m\]\w\[\e[0m\]] $ "
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
 export TERM=xterm-color
@@ -56,9 +59,10 @@ export EDITOR=vim
 
 case "$OSTYPE" in
   darwin*)
-    export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home
+    export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
+    #export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home
     #export EXTRA_JAVA_HOMES=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
-    export EXTRA_JAVA_HOMES=/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home
+    #export EXTRA_JAVA_HOMES=/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home
     ;;
   linux*)
     
@@ -77,6 +81,10 @@ export PATH=~/Documents/program/c1visualizer/bin:$PATH
 # mxtool for fastr
 export PATH=/Users/zwei/Workspace/mxtool2:$PATH
 export MXTOOL_HOME=/Users/zwei/Workspace/mxtool2
+
+# rbenv
+#export RBENV_ROOT=/opt/twitter/var/rbenv
+#if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 ##########################################################
 # Alias
