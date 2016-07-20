@@ -105,6 +105,9 @@ alias apm='apm --color'
 # mx
 alias mx='mx --src-suitemodel nested'
 
+# update
+alias up='brew update; brew upgrade; upgrade_oh_my_zsh'
+
 ##########################################################
 # Arch linux
 ##########################################################
