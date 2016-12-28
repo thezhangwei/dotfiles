@@ -9,4 +9,5 @@ atom/compile-cache
 atom/.apm
 atom/*.out
 atom/blob-store
+atom/NUCLIDE.md
 
