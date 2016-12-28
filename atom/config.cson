@@ -1,23 +1,30 @@
 "*":
-  editor:
-    fontFamily: "Source Code Pro"
-    fontSize: 15
-    preferredLineLength: 160
-    confirmCheckoutHeadRevision: false
-    invisibles:
-      {}
-    softWrap: true
+  "autocomplete-plus":
+    enableAutoActivation: false
+  autosave:
+    enabled: true
   core:
-    ignoredNames: [
-      ".git"
-      ".svn"
-      ".DS_Store"
-      ".hg"
-      ".hgcheck"
-      ".idea"
-      ".metadata"
-      "*.pyc"
-    ]
+    automaticallyUpdate: false
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".hgrc"
+        ".flowconfig"
+      ]
+      "source.json": [
+        ".arcconfig"
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "TARGETS"
+        "cconf"
+        "cinc"
+        "ctw"
+        "mcconf"
+        "tw"
+        "thrift-cvalidator"
+        "BUCK"
+      ]
     disabledPackages: [
       "wrap-guide"
       "language-perl"
@@ -39,35 +46,91 @@
       "language-go"
       "language-less"
       "language-mustache"
+      "fuzzy-finder"
+      "metrics"
+      "tree-view"
     ]
+    ignoredNames: [
+      ".git"
+      ".svn"
+      ".DS_Store"
+      ".hg"
+      ".hgcheck"
+      ".idea"
+      ".metadata"
+      "*.pyc"
+    ]
+    telemetryConsent: "no"
     themes: [
       "atom-light-ui"
       "solarized-light-syntax"
     ]
+  editor:
+    confirmCheckoutHeadRevision: false
+    fontFamily: "Source Code Pro"
+    invisibles: {}
+    preferredLineLength: 160
+    softWrap: true
   "exception-reporting":
     userId: "1837a652-0271-2ad0-c5ce-3d4fa8a6bdb4"
-  "release-notes":
-    viewedVersion: "0.81.0"
-  welcome:
-    showOnStartup: false
+  latex: {}
   metrics:
     userId: "fd4755fdc9c74cf4e3cf5efacdc9208cb21818a6"
-  autosave:
-    enabled: true
-  "tree-view":
-    hideVcsIgnoredFiles: true
-    hideIgnoredNames: true
+  nuclide:
+    installRecommendedPackages: true
+    "nuclide-arcanist":
+      blacklistedLinters: [
+        "FBFLOW"
+        "FBRELAYFLOW"
+        "FBHACK"
+        "PEP8"
+        "FLAKE8"
+        "FlowLint"
+      ]
+    "nuclide-bookshelf":
+      changeActiveBookmarkBehavior: "Always Ignore"
+    "nuclide-remote-projects":
+      connectionProfiles: [
+        {
+          deletable: true
+          displayTitle: "www"
+          params:
+            authMethod: "PRIVATE_KEY"
+            cwd: "/home/zwei/www"
+            pathToPrivateKey: "/Users/zwei/.ssh/fb_id_rsa"
+            remoteServerCommand: ""
+            server: "our.zwei.sb.facebook.com"
+            sshPort: "22"
+            username: "zwei"
+          saveable: true
+        }
+        {
+          deletable: true
+          displayTitle: "fbcode"
+          params:
+            displayTitle: "fbcode"
+            username: "zwei"
+            server: "our.zwei.sb.facebook.com"
+            cwd: "/data/users/zwei/fbsource/fbcode"
+            sshPort: "22"
+            authMethod: "PRIVATE_KEY"
+            pathToPrivateKey: "/Users/zwei/.ssh/fb_id_rsa"
+            remoteServerCommand: ""
+          saveable: true
+        }
+      ]
+      shutdownServerAfterDisconnection: false
+  "release-notes":
+    viewedVersion: "0.81.0"
   "remember-session":
+    height: 1173
     path: ""
+    selectedTab: ""
+    tabs: ""
+    treeWidth: 200
+    width: 1920
     x: 0
     y: 23
-    tabs: ""
-    selectedTab: ""
-    width: 1920
-    height: 1173
-    treeWidth: 200
-  "autocomplete-plus":
-    enableAutoActivation: false
   "spell-check":
     grammars: [
       "source.gfm"
@@ -76,11 +139,14 @@
       "text.tex.latex"
       "meta.group.braces.tex"
     ]
-  latex:
-    {}
   "tool-bar":
-    position: "Left"
     iconSize: "16px"
+    position: "Left"
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
 ".python.source":
   editor:
     tabLength: 2
