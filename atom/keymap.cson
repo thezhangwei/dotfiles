@@ -17,13 +17,17 @@
 #   'ctrl-p': 'core:move-down'
 #
 
+'.platform-darwin .workspace':
+ 'ctrl-cmd-b': 'nuclide-file-tree:toggle'
+
 '.atom-text-editor:not(.mini)':
   'cmd-d': 'editor:delete-line'
 
-'.editor:not(.mini)':
+'.platform-darwin .editor:not(.mini)':
   'cmd-d': 'editor:delete-line'
   'cmd-[': 'nuclide-navigation-stack:navigate-backwards'
   'cmd-]': 'nuclide-navigation-stack:navigate-forwards'
+  'cmd-\\': 'hyperclick:confirm-cursor'
 
 '.atom-text-editor':
   'alt-space': 'autocomplete:toggle'

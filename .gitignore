@@ -2,6 +2,7 @@
 ssh
 
 # atom
+atom/config.cson
 atom/storage
 atom/.node-gyp
 atom/packages
