@@ -51,19 +51,22 @@ export EDITOR=vim
 
 # Java
 
-
 case "$OSTYPE" in
   darwin*)
-    #export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
-    export JAVA_HOME=/usr/lib/jvm/java-1.8.0-twitter
-    #export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home
+    export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home
     #export EXTRA_JAVA_HOMES=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
-    #export EXTRA_JAVA_HOMES=/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home
     ;;
   linux*)
     
     ;;
 esac
+
+# fbandroid
+export ANDROID_SDK=/opt/android_sdk
+export FBANDROID=/Users/zwei/fbsource/fbandroid
+export ANDROID_NDK_REPOSITORY=/opt/android_ndk
+export ANDROID_HOME=${ANDROID_SDK}
+export PATH=${PATH}:${ANDROID_SDK}/tools:${ANDROID_SDK}/platform-tools
 
 # Homebrew
 export PATH=/usr/local/bin:$PATH
@@ -77,10 +80,6 @@ export PATH=~/Documents/program/c1visualizer/bin:$PATH
 # mxtool for fastr
 export PATH=/Users/zwei/Workspace/mxtool2:$PATH
 export MXTOOL_HOME=/Users/zwei/Workspace/mxtool2
-
-# rbenv
-#export RBENV_ROOT=/opt/twitter/var/rbenv
-#if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 ##########################################################
 # Alias
@@ -103,6 +102,9 @@ alias mx='mx --src-suitemodel nested'
 # update
 alias up='brew update; brew upgrade; upgrade_oh_my_zsh'
 
+# buck-env for devserver
+alias buck-env="source ~/fbsource/fbandroid/scripts/devserver_env_setup.sh"
+
 ##########################################################
 # Arch linux
 ##########################################################
@@ -119,3 +121,4 @@ esac
 
 # i3
 export TERMINAL=urxvt
+
