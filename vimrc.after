@@ -5,7 +5,7 @@ colorscheme solarized
 set t_Co=256
 
 " line number
-"set number
+set number
 
 " turn off toolbar for macvim
 set guioptions-=T

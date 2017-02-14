@@ -81,6 +81,9 @@ export PATH=~/Documents/program/c1visualizer/bin:$PATH
 export PATH=/Users/zwei/Workspace/mxtool2:$PATH
 export MXTOOL_HOME=/Users/zwei/Workspace/mxtool2
 
+# sublime text
+export PATH=~/bin:$PATH
+
 ##########################################################
 # Alias
 ##########################################################
