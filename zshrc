@@ -40,6 +40,10 @@ source $ZSH/oh-my-zsh.sh
 ##########################################################
 # Environemnt
 ##########################################################
+# history
+export HISTSIZE=130000
+export SAVEHIST=130000
+
 # prompt
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
@@ -83,6 +87,9 @@ export MXTOOL_HOME=/Users/zwei/Workspace/mxtool2
 
 # sublime text
 export PATH=~/bin:$PATH
+
+# buck dev
+#export PATH=~/local/buck/bin:$PATH
 
 ##########################################################
 # Alias
