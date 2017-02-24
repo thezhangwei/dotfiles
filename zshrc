@@ -30,7 +30,7 @@ ZSH_THEME="zwei"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx ruby brew macport git-flow mercurial)
+plugins=(git osx ruby brew git-flow mercurial)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -89,7 +89,7 @@ export MXTOOL_HOME=/Users/zwei/Workspace/mxtool2
 export PATH=~/bin:$PATH
 
 # buck dev
-#export PATH=~/local/buck/bin:$PATH
+export PATH=~/local/buck/bin:$PATH
 
 ##########################################################
 # Alias
