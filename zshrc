@@ -112,9 +112,6 @@ alias mx='mx --src-suitemodel nested'
 # update
 alias up='brew update; brew upgrade; upgrade_oh_my_zsh'
 
-# buck-env for devserver
-alias buck-env="source ~/fbsource/fbandroid/scripts/devserver_env_setup.sh"
-
 ##########################################################
 # Arch linux
 ##########################################################
@@ -131,4 +128,10 @@ esac
 
 # i3
 export TERMINAL=urxvt
+
+
+##########################################################
+# Custom local configs
+##########################################################
+source ~/.zshrc.local
 
