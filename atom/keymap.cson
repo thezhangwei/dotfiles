@@ -28,6 +28,8 @@
   'cmd-[': 'nuclide-navigation-stack:navigate-backwards'
   'cmd-]': 'nuclide-navigation-stack:navigate-forwards'
   'cmd-\\': 'hyperclick:confirm-cursor'
+  'home': 'core:move-to-top'
+  'end': 'core:move-to-bottom'
 
 '.atom-text-editor':
   'alt-space': 'autocomplete:toggle'
