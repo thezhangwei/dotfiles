@@ -30,7 +30,7 @@ ZSH_THEME="zwei"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx ruby brew macport git-flow mercurial)
+plugins=(git osx ruby brew git-flow mercurial)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -40,6 +40,10 @@ source $ZSH/oh-my-zsh.sh
 ##########################################################
 # Environemnt
 ##########################################################
+# history
+export HISTSIZE=130000
+export SAVEHIST=130000
+
 # prompt
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
@@ -51,19 +55,22 @@ export EDITOR=vim
 
 # Java
 
-
 case "$OSTYPE" in
   darwin*)
-    #export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
-    export JAVA_HOME=/usr/lib/jvm/java-1.8.0-twitter
-    #export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home
+    export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home
     #export EXTRA_JAVA_HOMES=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
-    #export EXTRA_JAVA_HOMES=/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home
     ;;
   linux*)
     
     ;;
 esac
+
+# fbandroid
+export ANDROID_SDK=/opt/android_sdk
+export FBANDROID=/Users/zwei/fbsource/fbandroid
+export ANDROID_NDK_REPOSITORY=/opt/android_ndk
+export ANDROID_HOME=${ANDROID_SDK}
+export PATH=${PATH}:${ANDROID_SDK}/tools:${ANDROID_SDK}/platform-tools
 
 # Homebrew
 export PATH=/usr/local/bin:$PATH
@@ -78,9 +85,11 @@ export PATH=~/Documents/program/c1visualizer/bin:$PATH
 export PATH=/Users/zwei/Workspace/mxtool2:$PATH
 export MXTOOL_HOME=/Users/zwei/Workspace/mxtool2
 
-# rbenv
-#export RBENV_ROOT=/opt/twitter/var/rbenv
-#if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+# sublime text
+export PATH=~/bin:$PATH
+
+# buck dev
+export PATH=~/local/buck/bin:$PATH
 
 ##########################################################
 # Alias
@@ -103,6 +112,9 @@ alias mx='mx --src-suitemodel nested'
 # update
 alias up='brew update; brew upgrade; upgrade_oh_my_zsh'
 
+# hg
+alias h='hg'
+
 ##########################################################
 # Arch linux
 ##########################################################
@@ -119,3 +131,10 @@ esac
 
 # i3
 export TERMINAL=urxvt
+
+
+##########################################################
+# Custom local configs
+##########################################################
+source ~/.zshrc.local
+
