@@ -8,7 +8,7 @@
 [core]
 	editor = vim
 	excludesfile = ~/dotfiles/gitignore_global
-	pager = cat
+	pager = less
 [push]
 	default = simple
 [merge]
