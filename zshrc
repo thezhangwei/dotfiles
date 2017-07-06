@@ -91,6 +91,9 @@ export PATH=~/bin:$PATH
 # buck dev
 export PATH=~/local/buck/bin:$PATH
 
+# local binary
+export PATH=~/.local/bin:$PATH
+
 ##########################################################
 # Alias
 ##########################################################
@@ -136,5 +139,8 @@ export TERMINAL=urxvt
 ##########################################################
 # Custom local configs
 ##########################################################
-source ~/.zshrc.local
+LOCAL_ZSHRC="~/.zshrc.local"
+if [ -f $LOCAL_ZSHRC ]; then
+  source $LOCAL_ZSHRC
+fi
 
