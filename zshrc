@@ -30,7 +30,7 @@ ZSH_THEME="zwei"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx ruby brew macport git-flow mercurial)
+plugins=(git osx ruby brew git-flow mercurial)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -40,6 +40,10 @@ source $ZSH/oh-my-zsh.sh
 ##########################################################
 # Environemnt
 ##########################################################
+# history
+export HISTSIZE=130000
+export SAVEHIST=130000
+
 # prompt
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
@@ -67,6 +71,7 @@ export FBANDROID=/Users/zwei/fbsource/fbandroid
 export ANDROID_NDK_REPOSITORY=/opt/android_ndk
 export ANDROID_HOME=${ANDROID_SDK}
 export PATH=${PATH}:${ANDROID_SDK}/tools:${ANDROID_SDK}/platform-tools
+export PATH=${PATH}:${ANDROID_SDK}/build-tools/23.0.1
 
 # Homebrew
 export PATH=/usr/local/bin:$PATH
@@ -83,6 +88,12 @@ export MXTOOL_HOME=/Users/zwei/Workspace/mxtool2
 
 # sublime text
 export PATH=~/bin:$PATH
+
+# buck dev
+export PATH=~/local/buck/bin:$PATH
+
+# local binary
+export PATH=~/.local/bin:$PATH
 
 ##########################################################
 # Alias
@@ -105,8 +116,11 @@ alias mx='mx --src-suitemodel nested'
 # update
 alias up='brew update; brew upgrade; upgrade_oh_my_zsh'
 
-# buck-env for devserver
-alias buck-env="source ~/fbsource/fbandroid/scripts/devserver_env_setup.sh"
+# hg
+alias h='hg'
+
+# clang-format
+alias clang-format-diff='cd $(hg root) && hg diff -U0 -r . | clang-format -i && cd -'
 
 ##########################################################
 # Arch linux
@@ -124,4 +138,13 @@ esac
 
 # i3
 export TERMINAL=urxvt
+
+
+##########################################################
+# Custom local configs
+##########################################################
+LOCAL_ZSHRC="~/.zshrc.local"
+if [ -f $LOCAL_ZSHRC ]; then
+  source $LOCAL_ZSHRC
+fi
 

@@ -7,8 +7,10 @@ function prompt_char {
   echo "%{$fg_bold[white]%}%(!.#.⚡)%{$reset_color%}" 
 }
 
+# $(_dotfiles_scm_info) is a fb hg prompt thing
+
 PROMPT='\
-%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}%m%{$reset_color%}: %{$fg[blue]%}%~%{$reset_color%}$(git_prompt_info) \
+%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}%m%{$reset_color%}: %{$fg[blue]%}%~%{$reset_color%}$(git_prompt_info)$(_dotfiles_scm_info) \
 %_$(prompt_char) '
 
 RPROMPT='%{$fg[green]%}[%*]%{$reset_color%}'
