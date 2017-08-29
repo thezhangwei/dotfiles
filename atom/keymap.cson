@@ -35,3 +35,4 @@
   'alt-space': 'autocomplete:toggle'
   'cmd-/': 'editor:toggle-line-comments'
   'cmd-b': 'latex:build'
+  'cmd-shift-l': 'editor:auto-indent'

@@ -71,6 +71,7 @@ export FBANDROID=/Users/zwei/fbsource/fbandroid
 export ANDROID_NDK_REPOSITORY=/opt/android_ndk
 export ANDROID_HOME=${ANDROID_SDK}
 export PATH=${PATH}:${ANDROID_SDK}/tools:${ANDROID_SDK}/platform-tools
+export PATH=${PATH}:${ANDROID_SDK}/build-tools/23.0.1
 
 # Homebrew
 export PATH=/usr/local/bin:$PATH
@@ -114,6 +115,9 @@ alias up='brew update; brew upgrade; upgrade_oh_my_zsh'
 
 # hg
 alias h='hg'
+
+# clang-format
+alias clang-format-diff='cd $(hg root) && hg diff -U0 -r . | clang-format -i && cd -'
 
 ##########################################################
 # Arch linux
