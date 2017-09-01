@@ -87,7 +87,7 @@ export PATH=/Users/zwei/Workspace/mxtool2:$PATH
 export MXTOOL_HOME=/Users/zwei/Workspace/mxtool2
 
 # sublime text
-export PATH=~/bin:$PATH
+export PATH=~/local/bin:$PATH
 
 # buck dev
 export PATH=~/local/buck/bin:$PATH
@@ -120,7 +120,7 @@ alias up='brew update; brew upgrade; upgrade_oh_my_zsh'
 alias h='hg'
 
 # clang-format
-alias clang-format-diff='cd $(hg root) && hg diff -U0 -r . | clang-format -i && cd -'
+alias clang-format-diff='cd $(hg root) && hg diff -U0 -r . | clang-format-diff.py -p 1 -i && cd -'
 
 ##########################################################
 # Arch linux
@@ -148,3 +148,12 @@ if [ -f $LOCAL_ZSHRC ]; then
   source $LOCAL_ZSHRC
 fi
 
+export FBANDROID_DIR=/Users/zwei/fbsource/fbandroid
+alias quicklog_update=/Users/zwei/fbsource/fbandroid/scripts/quicklog/quicklog_update.sh
+alias qlu=quicklog_update
+
+# added by setup_fb4a.sh
+export ANDROID_SDK=/opt/android_sdk
+export ANDROID_NDK_REPOSITORY=/opt/android_ndk
+export ANDROID_HOME=${ANDROID_SDK}
+export PATH=${PATH}:${ANDROID_SDK}/tools:${ANDROID_SDK}/platform-tools

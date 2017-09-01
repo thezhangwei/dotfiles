@@ -8,9 +8,15 @@ function prompt_char {
 }
 
 # $(_dotfiles_scm_info) is a fb hg prompt thing
+function parse_hg_branch {
+  if (( $+commands[_dotfiles_scm_info] )) then
+    # wrap in parens
+    echo "$(_dotfiles_scm_info)"
+  fi
+}
 
 PROMPT='\
-%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}%m%{$reset_color%}: %{$fg[blue]%}%~%{$reset_color%}$(git_prompt_info)$(_dotfiles_scm_info) \
+%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}%m%{$reset_color%}: %{$fg[blue]%}%~%{$reset_color%}$(git_prompt_info)$(parse_hg_branch) \
 %_$(prompt_char) '
 
 RPROMPT='%{$fg[green]%}[%*]%{$reset_color%}'
