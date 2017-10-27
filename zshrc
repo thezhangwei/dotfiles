@@ -104,8 +104,14 @@ alias ..='cd ..'
 # ls
 alias ls="ls -lAhG"
 
+# less
+alias less="less -N"
+
 # rm
 alias rm='rm -i'
+
+# diff
+alias diff='colordiff'
 
 # apm
 alias apm='apm --color'
