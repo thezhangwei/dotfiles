@@ -15,7 +15,7 @@ pager = LESS='FRKX' less
 
 [extensions]
 #enable hg glog command
-hgext.graphlog =
+#hgext.graphlog =
 
 # enable color diff, need mercurial >=1.1
 color=
