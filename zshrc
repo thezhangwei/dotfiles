@@ -30,7 +30,7 @@ ZSH_THEME="zwei"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx ruby brew git-flow mercurial)
+plugins=(git macos ruby brew git-flow mercurial)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -120,7 +120,7 @@ alias apm='apm --color'
 alias mx='mx --src-suitemodel nested'
 
 # update
-alias up='brew update; brew upgrade; upgrade_oh_my_zsh'
+alias up='brew update; brew upgrade; omz update'
 
 # hg
 alias h='hg'
