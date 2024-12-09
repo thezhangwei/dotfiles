@@ -47,3 +47,6 @@ sglog = glog --template '\t\033[0;33m{rev} \033[0;31m{branches}  \033[0m{desc|fi
 st = status
 gl = glog -l 10
 sgl = sglog -l 20
+
+[isl]
+hasShownGettingStarted = true

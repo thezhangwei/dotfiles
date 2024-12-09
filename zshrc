@@ -30,7 +30,7 @@ ZSH_THEME="zwei"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git macos ruby brew git-flow mercurial)
+# plugins=(git macos ruby brew git-flow mercurial)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -53,18 +53,6 @@ colors
 
 export EDITOR=vim
 
-# Java
-
-case "$OSTYPE" in
-  darwin*)
-    #export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home
-    #export EXTRA_JAVA_HOMES=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
-    ;;
-  linux*)
-    
-    ;;
-esac
-
 # fbandroid
 export ANDROID_SDK=/opt/android_sdk
 export FBANDROID=/Users/zwei/fbsource/fbandroid
@@ -75,22 +63,7 @@ export PATH=${PATH}:${ANDROID_SDK}/build-tools/23.0.1
 
 # Homebrew
 export PATH=/usr/local/bin:$PATH
-
-# eclipse
-export ECLIPSE_HOME=/Applications/eclipse
-
-# c1xvisualizer
-export PATH=~/Documents/program/c1visualizer/bin:$PATH
-
-# mxtool for fastr
-export PATH=/Users/zwei/Workspace/mxtool2:$PATH
-export MXTOOL_HOME=/Users/zwei/Workspace/mxtool2
-
-# sublime text
-export PATH=~/local/bin:$PATH
-
-# buck dev
-export PATH=~/local/buck/bin:$PATH
+export PATH=/opt/homebrew/bin:$PATH
 
 # local binary
 export PATH=~/.local/bin:$PATH
@@ -129,24 +102,6 @@ alias h='hg'
 alias clang-format-diff='cd $(hg root) && hg diff -U0 -r . | clang-format-diff.py -p 1 -i && cd -'
 
 ##########################################################
-# Arch linux
-##########################################################
-# ibus
-export GTK_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
-export QT_IM_MODULE=ibus
-
-case "$OSTYPE" in
-  linux*)
-    ibus-daemon -drx
-    ;;
-esac
-
-# i3
-export TERMINAL=urxvt
-
-
-##########################################################
 # Custom local configs
 ##########################################################
 LOCAL_ZSHRC="~/.zshrc.local"
@@ -155,11 +110,12 @@ if [ -f $LOCAL_ZSHRC ]; then
 fi
 
 export FBANDROID_DIR=/Users/zwei/fbsource/fbandroid
-alias quicklog_update=/Users/zwei/fbsource/fbandroid/scripts/quicklog/quicklog_update.sh
-alias qlu=quicklog_update
+# alias quicklog_update=/Users/zwei/fbsource/fbandroid/scripts/quicklog/quicklog_update.sh
+# alias qlu=quicklog_update
 
 # added by setup_fb4a.sh
 export ANDROID_SDK=/opt/android_sdk
 export ANDROID_NDK_REPOSITORY=/opt/android_ndk
 export ANDROID_HOME=${ANDROID_SDK}
 export PATH=${PATH}:${ANDROID_SDK}/tools:${ANDROID_SDK}/tools/bin:${ANDROID_SDK}/platform-tools
+export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
