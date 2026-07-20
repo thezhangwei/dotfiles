@@ -16,7 +16,6 @@ function parse_hg_branch {
 }
 
 PROMPT='\
-%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}%m%{$reset_color%}: %{$fg[blue]%}%~%{$reset_color%}$(git_prompt_info)$(parse_hg_branch) \
-%_$(prompt_char) '
+%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}%m%{$reset_color%}: %{$fg[blue]%}%~%{$reset_color%}$(git_prompt_info)$(parse_hg_branch) '
 
 RPROMPT='%{$fg[green]%}[%*]%{$reset_color%}'
