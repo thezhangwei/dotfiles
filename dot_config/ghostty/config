@@ -1,0 +1,8 @@
+# Force the Mac Option key to act as a proper Alt key
+macos-option-as-alt = true
+
+# Stop Ghostty from intercepting Alt+Arrows
+keybind = alt+left=unbind
+keybind = alt+right=unbind
+keybind = alt+up=unbind
+keybind = alt+down=unbind
